@@ -19,10 +19,15 @@ h1 {
 }
 
 header,
-main {
+main,
+.ferramentas_pesquisa {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ferramentas_pesquisa {
+  gap: 5px;
 }
 
 header {
@@ -79,5 +84,19 @@ img {
     --cor_secundaria: #f8faff;
     --cor_brilho: #a3bffa;
     --cor_fonte: #0f172a;
+  }
+}
+
+@media (max-width: 800px) {
+  img {
+    width: 90%;
+  }
+
+  .ferramentas_pesquisa {
+    flex-direction: column;
+  }
+
+  :root {
+    --tamanho-header: 200px;
   }
 }
