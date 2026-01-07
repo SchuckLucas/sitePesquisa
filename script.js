@@ -2,7 +2,7 @@ const imagem = document.getElementById("ImagemCarta");
 const botaoID = document.getElementById("BotaoPesquisarID");
 const botaoName = document.getElementById("BotaoPesquisarNome");
 const input = document.getElementById("InputId");
-const baseURL = "https://api-teste2-rmj4.vercel.app/";
+const baseURL = "https://api-teste2-rmj4.vercel.app";
 
 botaoID.addEventListener("click", () => {
   pesquisarPokemonPorID(input.value);
@@ -92,4 +92,5 @@ function pesquisarPokemonPorNome(name) {
 function capitalizar(palavra) {
   return palavra.charAt(0).toUpperCase() + palavra.slice(1).toLowerCase();
 }
+
 
